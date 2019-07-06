@@ -26,18 +26,24 @@
           <div class="mui-media-body">商品购买</div>
         </router-link>
       </li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
-        <span class="mui-icon mui-icon-chat"></span>
-        <div class="mui-media-body">留言反馈</div>
-      </a></li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
-        <span class="mui-icon mui-icon-videocam"></span>
-        <div class="mui-media-body">视频专区</div>
-      </a></li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
-        <span class="mui-icon mui-icon-phone"></span>
-        <div class="mui-media-body">联系我们</div>
-      </a></li>
+      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+        <router-link to="/spgm2">
+          <span class="mui-icon mui-icon-chat"></span>
+          <div class="mui-media-body">商品购买2</div>
+        </router-link>
+      </li>
+      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+        <router-link to="/spgm3">
+          <span class="mui-icon mui-icon-videocam"></span>
+          <div class="mui-media-body">商品购买3</div>
+        </router-link>
+      </li>
+      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+        <router-link to="/spgm4">
+          <span class="mui-icon mui-icon-phone"></span>
+          <div class="mui-media-body">商品购买4</div>
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>

@@ -17,12 +17,12 @@
     </transition>
 
     <div class="mui-card">
-      <div class="mui-card-header">华为手机</div>
+      <div class="mui-card-header">华为手机P50</div>
       <div class="mui-card-content">
         <div class="mui-card-content-inner">
           <p class="price">
             市场价:
-            <del>￥4500</del>&nbsp; &nbsp;销售价:<span class="new_price">￥3000</span>
+            <del>￥4500</del>&nbsp; &nbsp;销售价:<span class="new_price">￥6000</span>
           </p>
           <p>购买数量：
             <span class="mui-numbox" data-numbox-min="0" data-numbox-max="9">
@@ -57,9 +57,10 @@
 </template>
 
 <script>
-  import jpg1 from '../lib/images/1.jpg'
+  import jpg4 from '../lib/images/4.jpeg'
+
   export default {
-    name: "spgm",
+    name: "spgm4",
     data() {
       return {
         bollFalg: false,
@@ -82,7 +83,7 @@
       },
       addCard() {
         this.bollFalg = true;
-        let goodInfo = {id: '1001', count: this.numValue, price: 3000, selected: true, title: '华为P20', url: jpg1};
+        let goodInfo = {id: '1004', count: this.numValue, price: 6000, selected: true, title: '华为P60', url: jpg4};
 
         //  调用 store 中的 mutations 中 的 方法
         this.$store.commit('addToCar', goodInfo);
