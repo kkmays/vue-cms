@@ -6,7 +6,9 @@
     </mt-header>
 
     <!--这是路由 router-view 区域-->
-    <router-view></router-view>
+    <transition>
+      <router-view></router-view>
+    </transition>
 
     <!--这是 Tabbar 区-->
     <nav class="mui-bar mui-bar-tab">
@@ -19,7 +21,7 @@
         <span class="mui-tab-label">会员</span>
       </router-link>
       <router-link class="mui-tab-item" to="/cart">
-        <span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge">0</span></span>
+        <span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge" id="badge">0</span></span>
         <span class="mui-tab-label">购物车</span>
       </router-link>
       <router-link class="mui-tab-item" to="/search">
@@ -31,13 +33,30 @@
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  export default {
+    name: 'App'
+  }
 </script>
 
-<style scoped>
-.app-container {
-  padding-top: 40px;
-}
+<style scoped lang="less">
+  .app-container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+  }
+
+  .v-enter {
+    opacity: 100%;
+    transform: translateX(100%);
+  }
+
+  .v-leave-to {
+    opacity: 0;
+    transform: translateX(-100%);
+    position: absolute;
+  }
+
+  .v-leave-active, .v-leave-active {
+    transition: all 0.5s ease;
+  }
 </style>

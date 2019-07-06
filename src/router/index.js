@@ -11,13 +11,16 @@ import HomeContainer from '../components/tabbar/homeContainer.vue'
 import CartContainer from '../components/tabbar/cartContainer.vue'
 import SearchContainer from '../components/tabbar/searchContainer.vue'
 import MemberContainer from '../components/tabbar/memberContainer.vue'
+import SpgmContainer from '../components/spgm.vue'
 
 export default new Router({
   routes: [
+    {path: '/', redirect: '/home'},
     {path: '/home', component: HomeContainer},
     {path: '/cart', component: CartContainer},
     {path: '/search', component: SearchContainer},
-    {path: '/member', component: MemberContainer}
+    {path: '/member', component: MemberContainer},
+    {path: '/spgm', component: SpgmContainer}
   ],
   linkActiveClass: 'mui-active'  // 默认覆盖高亮的类 router-link-active
 })

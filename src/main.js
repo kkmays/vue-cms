@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
-
-import {Header, Swipe, SwipeItem} from 'mint-ui';
+import {Header, Swipe, SwipeItem, Button} from 'mint-ui';
 import 'mint-ui/lib/style.css'
 
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Header.name, Header);
+Vue.component(Button.name, Button);
 Vue.config.productionTip = false;
 
 
